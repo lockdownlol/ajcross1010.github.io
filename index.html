@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+
+<body>
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    <div id="lightning"></div>
+    <div>Hello</div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.9.1/jsforce.min.js"></script>
+    <script src="https://eon--develop1.lightning.force.com/lightning/lightning.out.js"></script>
+    <script>
+        $Lightning.use("c:DA_LightningOutDemo", function () {
+            $Lightning.createComponent("c:daMyDetails", {},
+                "lightning",
+                function (cmp) {
+                    console.log("LWC component was created");
+                    // do some stuff
+                }
+            );
+        },
+            "https://eon--develop1.lightning.force.com/",
+            "00D1X0000000ukC!ARoAQM7dDlZSM.F5mCi2O1YJ9lMWEXX_nlOtOuZu9DmPEniQJLJwWoy4mQ6.L8NJ6eytgPVUIseET0_yQunvGBdmEdnbBSiU"
+        );
+    </script>
+</body>
+
 </html>
