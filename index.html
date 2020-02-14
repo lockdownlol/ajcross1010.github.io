@@ -7,19 +7,13 @@
     <div id="lightning"></div>
     <div>Hello</div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.9.1/jsforce.min.js"></script>
-    <script src="https://eon--develop1.lightning.force.com/lightning/lightning.out.js"></script>
+    <script src="https://ajcutiltest-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
     <script>
-        $Lightning.use("c:DA_LightningOutDemo", function () {
-            $Lightning.createComponent("c:daMyDetails", {},
-                "lightning",
-                function (cmp) {
-                    console.log("LWC component was created");
-                    // do some stuff
-                }
-            );
+        $Lightning.use("c:DA_LightningOutBase", function () {
+            
         },
-            "https://eon--develop1.lightning.force.com/",
-            "00D1X0000000ukC!ARoAQM7dDlZSM.F5mCi2O1YJ9lMWEXX_nlOtOuZu9DmPEniQJLJwWoy4mQ6.L8NJ6eytgPVUIseET0_yQunvGBdmEdnbBSiU"
+            "https://ajcutiltest-dev-ed.lightning.force.com/",
+            "00D1t000000q6ht!ARUAQOGHspddu0nM0ql0khDJmvD6k1z938LHCPMxz7RsO3pQvGOsXgzikYYFgTwhYsmmse.iGveovKaHPC5hlsRH5v6MmB5RU"
         );
     </script>
 </body>
