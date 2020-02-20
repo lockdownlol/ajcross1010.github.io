@@ -5,7 +5,9 @@
     <h1>Lightning Out Concept</h1>
     <br />
     <div>-------------------------------------------------------------------------------------------------</div>
-    <div id="lightning"></div>
+    <div id="lightningComp1"></div>
+    <div>-------------------------------------------------------------------------------------------------</div>
+    <div id="lightningComp2"></div>
     <div>-------------------------------------------------------------------------------------------------</div>
    
     <script src="https://ajcutiltest-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
@@ -13,7 +15,20 @@
         $Lightning.use("c:DA_LightningOutBase", function () {
             $Lightning.createComponent("c:daLightningOutHandler",
                                        { "inputValue" : "Test Value 11111"},
-                "lightning",
+                "lightningComp1",
+                function (cmp) {
+                    console.log("LWC component was created");
+                    // do some stuff
+                }
+            );
+        },
+            "https://ajcutiltest-dev-ed.lightning.force.com/",
+            "00D1t000000q6ht!ARUAQIVno1mFdbtrm2t4wn1dQKS.VDnG4ZWIMGfrBT8T315wj8LhoUXUg0TEhTNF0BjDZ.pxr9s9QOXlTcnaGo7tLgyrToZW"
+        );
+        $Lightning.use("c:DA_LightningOutBase", function () {
+            $Lightning.createComponent("c:daLightningOutHandler",
+                                       { "inputValue" : "Test Value 99999"},
+                "lightningComp2",
                 function (cmp) {
                     console.log("LWC component was created");
                     // do some stuff
